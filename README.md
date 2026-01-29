@@ -293,49 +293,40 @@ graph TD
 ## 🧠 Conceptual Summary
 
 ```mermaid
+---
+config:
+  theme: 'base'
+  themeVariables:
+    primaryColor: '#b302fd'
+    primaryTextColor: '#1565c0'
+    primaryBorderColor: '#7C00'
+    lineColor: '#F8B229'
+    secondaryColor: '#0ad2fb'
+    tertiaryColor: '#9a0af9'
+---
 mindmap
   root((Network Lab<br/>Learning))
-    Setup)Setup(
-      ::icon(fa fa-desktop)
+    Setup
       VirtualBox VMs
       Internal Networks
       Static IPs
-    Routing)Routing(
-      ::icon(fa fa-route)
+    Routing
       Routing Tables
       IP Forwarding
       Gateway Configuration
-    Breaking)Breaking(
-      ::icon(fa fa-bomb)
+    Breaking
       Latency Injection
       Packet Loss
       Traffic Control
-    Analysis)Analysis(
-      ::icon(fa fa-chart-line)
+    Analysis
       TCP Behavior
       UDP Behavior
       Performance Metrics
-    Tools)Tools(
-      ::icon(fa fa-wrench)
+    Tools
       iperf3
       tcpdump
       Wireshark
       tc netem
-
-    %% Color Definitions
-    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
-    classDef setup fill:#e1f5ff,stroke:#007acc,color:#000;
-    classDef routing fill:#fff3cd,stroke:#d4a017,color:#000;
-    classDef breaking fill:#ffcccb,stroke:#a30000,color:#000;
-    classDef analysis fill:#d4edda,stroke:#155724,color:#000;
-    classDef tools fill:#f3e5f5,stroke:#7b1fa2,color:#000;
-
-    %% Applying Classes
-    class Setup setup
-    class Routing routing
-    class Breaking breaking
-    class Analysis analysis
-    class Tools tools
 ```
 
 ## What We Would Be Doing Next
