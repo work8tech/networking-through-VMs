@@ -295,27 +295,47 @@ graph TD
 ```mermaid
 mindmap
   root((Network Lab<br/>Learning))
-    Setup
+    Setup)Setup(
+      ::icon(fa fa-desktop)
       VirtualBox VMs
       Internal Networks
       Static IPs
-    Routing
+    Routing)Routing(
+      ::icon(fa fa-route)
       Routing Tables
       IP Forwarding
       Gateway Configuration
-    Breaking
+    Breaking)Breaking(
+      ::icon(fa fa-bomb)
       Latency Injection
       Packet Loss
       Traffic Control
-    Analysis
+    Analysis)Analysis(
+      ::icon(fa fa-chart-line)
       TCP Behavior
       UDP Behavior
       Performance Metrics
-    Tools
+    Tools)Tools(
+      ::icon(fa fa-wrench)
       iperf3
       tcpdump
       Wireshark
       tc netem
+
+    %% Color Definitions
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
+    classDef setup fill:#e1f5ff,stroke:#007acc,color:#000;
+    classDef routing fill:#fff3cd,stroke:#d4a017,color:#000;
+    classDef breaking fill:#ffcccb,stroke:#a30000,color:#000;
+    classDef analysis fill:#d4edda,stroke:#155724,color:#000;
+    classDef tools fill:#f3e5f5,stroke:#7b1fa2,color:#000;
+
+    %% Applying Classes
+    class Setup setup
+    class Routing routing
+    class Breaking breaking
+    class Analysis analysis
+    class Tools tools
 ```
 
 ## What We Would Be Doing Next
